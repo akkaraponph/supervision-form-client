@@ -1,0 +1,39 @@
+.one-top {
+    margin-bottom: 20px;
+}
+
+.toolbar-one {
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+}
+  
+.toolbar-two {
+    font-size: 30x;
+}
+
+button.demo-button {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    
+}
+
+.demo-button-one {
+    text-align: left;
+}
+
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    margin: 0px 5px; 
+}
+
+.card-buttom {
+    margin-bottom: 35px;
+    min-height: 450px;
+}

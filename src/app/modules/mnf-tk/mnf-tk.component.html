@@ -1,0 +1,63 @@
+<div class="mat-elevation-z3">
+    <mat-toolbar class="one-top" color="primary">
+      <span class="toolbar-one">แบบฟอร์มการติดตาม</span>
+      <mat-icon class="toolbar-two">groups</mat-icon>
+    </mat-toolbar>
+</div>
+  
+  <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+<div class="example-button-row-two">
+    <div class="example-button-row">
+        <div class="example-button-row-one">
+            <a routerLink="/manage-forms">
+                <button  mat-raised-button color="warn"><mat-icon>keyboard_return</mat-icon> Blck</button>
+            </a>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="card-buttom">
+<!-- <mat-card class="card-buttom"> -->
+    <mat-card-content>
+        <div class="row">
+            <div class="column">
+                <a routerLink="/mnf-tk-frist">
+                    <button mat-raised-button class="demo-button" matTooltip="See more" aria-label="Button that displays a tooltip when focused or hovered over">
+                       1. แบบติดตาม ตรวจสอบความพร้อมประเมินคุณภาพภายในสถานศึกษา 
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a routerLink="/mnf-tk-second">
+                    <button mat-raised-button class="demo-button" matTooltip="See more" aria-label="Button that displays a tooltip when focused or hovered over">
+                       2. แบบติดตามการนิเทศภายในและส่งเสริมการวิจัยในโรงเรียน
+                    </button>
+                </a>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="column">
+                <a routerLink="/mnf-tk-third">
+                    <button mat-raised-button class="demo-button" matTooltip="See more" aria-label="Button that displays a tooltip when focused or hovered over">
+                       3. แบบติดตามการพัฒนาคุณภาพการจัดการศึกษาแบบเรียนรวม
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a routerLink="/mnf-tk-fourth">
+                    <button mat-raised-button class="demo-button" matTooltip="See more" aria-label="Button that displays a tooltip when focused or hovered over">
+                       4. แบบติดตามการดำเนินการจัดการเรียนโดยใช้สื่อเทคโนโลยี นวัตกรรมและการจัดการศึกษาทางไกล DLIT
+                    </button>
+                </a>
+            </div>
+        </div>
+    </mat-card-content>
+<!-- </mat-card> -->
+</div>

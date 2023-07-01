@@ -1,0 +1,98 @@
+.font {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.one-top {
+    margin-bottom: 20px;
+}
+
+.toolbar-one {
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+}
+  
+.toolbar-two {
+    font-size: 30x;
+}
+
+.card-one {
+    margin-bottom: 45px;
+}
+
+mat-form-field {
+    width: 100%;
+  
+}
+  
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    margin: 0px 20px; 
+}
+
+.mat-stepper-horizontal {
+    margin-top: 8px;
+}
+  
+.mat-mdc-form-field {
+    margin-top: 16px;
+}
+
+.btn-b {
+    margin-right: 10px;
+    /* margin-top: 20px; */
+}
+
+.mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+.card-one {
+    margin-top: 8px;
+}
+
+.card-one-t {
+    margin-bottom: 8px;
+}
+
+.card-one-h {
+    margin-bottom: 5px;
+}
+
+.btn-position {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+}
+
+.ra-one {
+    margin-right: 30px;
+}
+
+button.demo-button {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.card-buttom {
+    margin-bottom: 35px;
+    min-height: 380px;
+}
+
+.card-buttom-one {
+    margin-bottom: 10px;
+}
+
+.example-button-row {
+    display: table-cell;
+    max-width: 600px;
+    margin-top: 26px;
+}

@@ -1,0 +1,70 @@
+mat-form-field {
+    width: 100%; 
+}
+
+.one-top {
+    margin-bottom: 20px;
+}
+
+.toolbar-one {
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+}
+  
+.toolbar-two {
+    font-size: 30x;
+}
+
+.textOne {
+    margin-right: 5px;
+}
+
+.card-buttom {
+    margin-bottom: 35px;
+    min-height: 380px;
+}
+
+.card-buttom-one {
+    margin-bottom: 10px;
+}
+
+.example-margin {
+    margin: 0 12px;
+}
+
+.ra-one {
+    margin-bottom: 5px;
+}
+
+.row {
+    display: flex;
+  
+}
+  
+.column {
+    flex: 50%;
+    margin: 0px 5px; 
+}
+
+.btn-position {
+    margin-bottom: 50px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.btn-b {
+    margin-right: 18px;
+}
+
+.card-one-t {
+    margin-bottom: 8px;
+}
+
+.card-one-h {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.card-one-b {
+    margin-bottom: 20px;
+}

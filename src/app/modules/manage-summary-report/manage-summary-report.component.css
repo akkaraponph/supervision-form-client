@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+.one-top {
+    margin-bottom: 20px;
+}
+  
+.toolbar-one {
+    margin-right: 15px;
+}
+  
+.toolbar-two {
+    font-size: 30x;
+}
+
+.card-buttom {
+    margin-bottom: 35px;
+    min-height: 520px;
+}

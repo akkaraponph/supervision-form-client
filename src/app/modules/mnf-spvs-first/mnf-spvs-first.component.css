@@ -1,0 +1,61 @@
+.one-top {
+    margin-bottom: 20px;
+}
+
+.toolbar-one {
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+}
+  
+.toolbar-two {
+    font-size: 30x;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    margin: 0px 5px; 
+}
+
+mat-form-field {
+    width: 100%; 
+}
+
+.ra-one {
+    margin-left: 50px;
+}
+
+.card-one {
+    margin-top: 8px;
+}
+
+.card-one-t {
+    margin-bottom: 8px;
+}
+
+.example-margin {
+    margin: 0 12px;
+}
+
+.card-one-b {
+    margin-bottom: 20px;
+}
+
+.btn-position {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.btn-b {
+    margin-right: 10px;
+    /* margin-top: 20px; */
+}
+
+.card-buttom {
+    margin-bottom: 35px;
+    min-height: 520px;
+}

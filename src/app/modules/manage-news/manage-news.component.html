@@ -1,0 +1,58 @@
+<div class="mat-elevation-z3">
+  <mat-toolbar class="one-top" color="primary">
+    <span class="toolbar-one">จัดการข้อมูลข่าวประชาสัมพันธ์</span>
+    <mat-icon class="toolbar-two">edit_square</mat-icon>
+  </mat-toolbar>
+</div>
+
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+  
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. School1" #input autocomplete="off">
+  </mat-form-field>
+  
+  <div class="example-button-row">
+    <div class="example-button-row-one">
+      <button (click)="AddNews()" mat-raised-button color="primary"><mat-icon>add</mat-icon> Add News</button>
+    </div>
+  </div>
+  
+  
+  <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+    <ng-container matColumnDef="Name_News">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> หัวข้อข่าว </th>
+      <td mat-cell *matCellDef="let element"> {{element.Name_News}} </td>
+    </ng-container>
+<!-- 
+    <ng-container matColumnDef="Content_News">
+      <th mat-header-cell *matHeaderCellDef > เนื้อหาข่าว </th>
+      <td mat-cell *matCellDef="let element"> {{element.Content_News}} </td>
+    </ng-container> -->
+  
+    <ng-container matColumnDef="PeopleUpdate_News">
+      <th mat-header-cell *matHeaderCellDef> ผู้สร้างข่าว </th>
+      <td mat-cell *matCellDef="let element"> {{element.PeopleUpdate_News}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Date_News">
+      <th mat-header-cell *matHeaderCellDef> วันที่สร้างข่าว </th>
+      <td mat-cell *matCellDef="let element"> {{element.Date_News}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Action">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon (click)="DetailNews(element.Id_News)" class="btnView" matTooltip="View ">visibility</mat-icon>
+        <mat-icon (click)="AddNews(element.Id_News)" class="btnEdit" matTooltip="Edit ">edit_square</mat-icon>
+        <mat-icon (click)="deleteNews(element.Id_News)" class="btnDelete" matTooltip="Delete ">delete</mat-icon>    
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  <mat-paginator class="mat-elevation-z3" [pageSizeOptions]="[10, 20, 50, 100]" aria-label="Select page of users"></mat-paginator>
+  

@@ -1,0 +1,53 @@
+table {
+  width: 100%;
+}
+
+.bottom-one {
+  margin-bottom: 40px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.one-top {
+  margin-bottom: 20px;
+}
+
+.toolbar-one {
+  margin-right: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.toolbar-two {
+  font-size: 30x;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 84%;
+  margin-right: 31px;
+}
+
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row-one {
+  margin-bottom: 10px;
+}
+
+.btnEdit, .btnDelete {
+  cursor: pointer;
+}
+
+.btnEdit {
+  color: rgb(18, 18, 140);
+  margin-right: 10px;
+}
+
+.btnDelete {
+  color: red;
+}

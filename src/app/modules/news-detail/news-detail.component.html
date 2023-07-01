@@ -1,0 +1,18 @@
+<div class="mat-elevation-z3">
+  <mat-toolbar class="one-top" color="primary">
+    <span class="toolbar-one">{{ heading }}</span>
+    <mat-icon class="toolbar-two">feed</mat-icon>
+  </mat-toolbar>
+</div>
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+<mat-card class="card-buttom">
+  <mat-card-content class="btn-top"> 
+    <div class="one-top">
+        <a routerLink="/news">
+            <button  mat-raised-button color="warn"><mat-icon>keyboard_return</mat-icon> Blck</button>
+        </a>
+    </div>
+
+  </mat-card-content>
+</mat-card>

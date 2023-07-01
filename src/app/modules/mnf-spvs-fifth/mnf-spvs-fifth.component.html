@@ -1,0 +1,575 @@
+<div class="mat-elevation-z3">
+    <mat-toolbar class="one-top" color="primary">
+      <span class="toolbar-one">แบบนิเทศ ติดตามการนำศาสตร์พระราชาไปใช้ในการจัดการเรียนรู้</span>
+      <mat-icon class="toolbar-two">groups</mat-icon>
+    </mat-toolbar>
+</div>
+  
+  <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+<div class="example-button-row-two">
+    <div class="example-button-row">
+        <div class="example-button-row-one">
+            <a routerLink="/mnf-spvs">
+                <button  mat-raised-button color="warn"><mat-icon>keyboard_return</mat-icon> Blck</button>
+            </a>
+        </div>
+    </div>
+</div>
+<br>
+
+<mat-card-content class="card-one-t">
+    <mat-card class="card-one-t">
+        <mat-card-content>
+            <div align="center" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
+                <table style="border-collapse:collapse;border:none;">
+                    <thead>
+                        <tr>
+                            <td rowspan="2" style="width:3%;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>ที่</span></strong></p>
+                            </td>
+                            <td rowspan="2" style="width:35%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>รายการ</span></strong></p>
+                            </td>
+                            <td colspan="2" style="width:13%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>หน่วย/แผนการเรียนรู้</span></strong></p>
+                            </td>
+                            <td colspan="2" style="width:13%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>กิจกรรมพัฒนาผู้เรียน</span></strong></p>
+                            </td>
+                            <td colspan="2" style="width:13%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>โครงการ/กิจกรรม</span></strong></p>
+                            </td>
+                            <td rowspan="2" style="width:23%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>คำอธิบายการปฏิบัติการนำศาสตร์พระราชาไปใช้จัดการเรียนรู้</span></strong></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>ปฏิบัติ</span></strong></p>
+                            </td>
+                            <td style="width:33.9pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:-6.95pt;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>ไม่ปฎิบัติ</span></strong></p>
+                            </td>
+                            <td style="width:37.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:-5.4pt;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>ปฏิบัติ</span></strong></p>
+                            </td>
+                            <td style="width:35.4pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>ไม่ปฎิบัติ</span></strong></p>
+                            </td>
+                            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>ปฏิบัติ</span></strong></p>
+                            </td>
+                            <td style="width:35.45pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:21px;font-family:   "TH SarabunPSK",sans-serif;'>ไม่ปฎิบัติ</span></strong></p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 21.3pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>1</span></p>
+                            </td>
+                            <td style="width: 111.95pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>นำหลักการ เข้าใจ เข้าถึง พัฒนาสู่การพัฒนาผู้เรียน</span></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                      <p
+                        style="
+                          margin-top: 0cm;
+                          margin-right: 0cm;
+                          margin-bottom: 0cm;
+                          margin-left: 0cm;
+                          line-height: normal;
+                          font-size: 15px;
+                          font-family: 'Calibri', sans-serif;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 20px;
+                            font-family: 'TH SarabunPSK', sans-serif;
+                          "
+                          ><mat-form-field
+                            appearance="outline"
+                            style="margin-top: 20px"
+                          >
+                            <mat-label
+                              >คำอธิบาย/หลักฐานอ้างอิง (ไม่มีให้ใส่
+                              "-")</mat-label
+                            >
+                            <textarea matInput></textarea>
+                          </mat-form-field> </span
+                        ><input class="ra-one" type="file">
+                      </p>
+                    </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" style="width: 21.3pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;height: 220.6pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>2</span></p>
+                            </td>
+                            <td style="width: 111.95pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>นำหลักปรัชญาของเศรษฐกิจพอเพียงสู่การพัฒนาผู้เรียน</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>&nbsp; &nbsp;2.1 ครูผู้สอนนำหลักปรัชญาของเศรษฐกิจพอเพียงสู่การปฏิบัติ ต่อไปนี้</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- ความพอประมาณ</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- ความมีเหตุผล</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- การสร้างภูมิคุ้มกัน</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- เงื่อนไขความรู้</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- เงื่อนไขคุณธรรม</span></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                      <p
+                        style="
+                          margin-top: 0cm;
+                          margin-right: 0cm;
+                          margin-bottom: 0cm;
+                          margin-left: 0cm;
+                          line-height: normal;
+                          font-size: 15px;
+                          font-family: 'Calibri', sans-serif;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 20px;
+                            font-family: 'TH SarabunPSK', sans-serif;
+                          "
+                          ><mat-form-field
+                            appearance="outline"
+                            style="margin-top: 20px"
+                          >
+                            <mat-label
+                              >คำอธิบาย/หลักฐานอ้างอิง (ไม่มีให้ใส่
+                              "-")</mat-label
+                            >
+                            <textarea matInput></textarea>
+                          </mat-form-field> </span
+                        ><input class="ra-one" type="file">
+                      </p>
+                    </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 111.95pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>&nbsp; &nbsp;2.2<strong>&nbsp;</strong>ผู้เรียนมีคุณลักษณะอยู่อย่างพอเพียง ตามหลักปรัชญาของเศรษฐกิจพอเพียง</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- ความพอประมาณ</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- ความมีเหตุผล</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- การสร้างภูมิคุ้มกัน</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- เงื่อนไขความรู้</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>- เงื่อนไขคุณธรรม</span></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                      <p
+                        style="
+                          margin-top: 0cm;
+                          margin-right: 0cm;
+                          margin-bottom: 0cm;
+                          margin-left: 0cm;
+                          line-height: normal;
+                          font-size: 15px;
+                          font-family: 'Calibri', sans-serif;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 20px;
+                            font-family: 'TH SarabunPSK', sans-serif;
+                          "
+                          ><mat-form-field
+                            appearance="outline"
+                            style="margin-top: 20px"
+                          >
+                            <mat-label
+                              >คำอธิบาย/หลักฐานอ้างอิง (ไม่มีให้ใส่
+                              "-")</mat-label
+                            >
+                            <textarea matInput></textarea>
+                          </mat-form-field> </span
+                        ><input class="ra-one" type="file">
+                      </p>
+                    </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 21.3pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>3</span></p>
+                            </td>
+                            <td style="width: 111.95pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>นำหลักการทรงงานไปใช้ในการจัดการเรียนรู้</span></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                      <p
+                        style="
+                          margin-top: 0cm;
+                          margin-right: 0cm;
+                          margin-bottom: 0cm;
+                          margin-left: 0cm;
+                          line-height: normal;
+                          font-size: 15px;
+                          font-family: 'Calibri', sans-serif;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 20px;
+                            font-family: 'TH SarabunPSK', sans-serif;
+                          "
+                          ><mat-form-field
+                            appearance="outline"
+                            style="margin-top: 20px"
+                          >
+                            <mat-label
+                              >คำอธิบาย/หลักฐานอ้างอิง (ไม่มีให้ใส่
+                              "-")</mat-label
+                            >
+                            <textarea matInput></textarea>
+                          </mat-form-field> </span
+                        ><input class="ra-one" type="file">
+                      </p>
+                    </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 21.3pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>4</span></p>
+                            </td>
+                            <td style="width: 111.95pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>การนำศาสตร์พระราชาพัฒนาสมรรถนะที่สำคัญของผู้เรียน</span></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                      <p
+                        style="
+                          margin-top: 0cm;
+                          margin-right: 0cm;
+                          margin-bottom: 0cm;
+                          margin-left: 0cm;
+                          line-height: normal;
+                          font-size: 15px;
+                          font-family: 'Calibri', sans-serif;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 20px;
+                            font-family: 'TH SarabunPSK', sans-serif;
+                          "
+                          ><mat-form-field
+                            appearance="outline"
+                            style="margin-top: 20px"
+                          >
+                            <mat-label
+                              >คำอธิบาย/หลักฐานอ้างอิง (ไม่มีให้ใส่
+                              "-")</mat-label
+                            >
+                            <textarea matInput></textarea>
+                          </mat-form-field> </span
+                        ><input class="ra-one" type="file">
+                      </p>
+                    </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 21.3pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>5</span></p>
+                            </td>
+                            <td style="width: 111.95pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>การนำศาสตร์พระราชา สู่การพัฒนาคุณลักษณะ</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>อันพึงประสงค์ของผู้เรียน</span></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                      <p
+                        style="
+                          margin-top: 0cm;
+                          margin-right: 0cm;
+                          margin-bottom: 0cm;
+                          margin-left: 0cm;
+                          line-height: normal;
+                          font-size: 15px;
+                          font-family: 'Calibri', sans-serif;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 20px;
+                            font-family: 'TH SarabunPSK', sans-serif;
+                          "
+                          ><mat-form-field
+                            appearance="outline"
+                            style="margin-top: 20px"
+                          >
+                            <mat-label
+                              >คำอธิบาย/หลักฐานอ้างอิง (ไม่มีให้ใส่
+                              "-")</mat-label
+                            >
+                            <textarea matInput></textarea>
+                          </mat-form-field> </span
+                        ><input class="ra-one" type="file">
+                      </p>
+                    </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 21.3pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;"><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><br>&nbsp;</span>&nbsp;<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>6</span></p>
+                            </td>
+                            <td style="width: 111.95pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>ศาสตร์พระราชาส่งผลต่อผู้เรียนเกิดทักษะดังต่อไปนี้</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>6.1 ทักษะวิชาการ</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>6.2 ทักษะชีวิต</span></p>
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'>6.3 ทักษะวิชาชีพ</span></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                            </td>
+                            <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                      <p
+                        style="
+                          margin-top: 0cm;
+                          margin-right: 0cm;
+                          margin-bottom: 0cm;
+                          margin-left: 0cm;
+                          line-height: normal;
+                          font-size: 15px;
+                          font-family: 'Calibri', sans-serif;
+                        "
+                      >
+                        <span
+                          style="
+                            font-size: 20px;
+                            font-family: 'TH SarabunPSK', sans-serif;
+                          "
+                          ><mat-form-field
+                            appearance="outline"
+                            style="margin-top: 20px"
+                          >
+                            <mat-label
+                              >คำอธิบาย/หลักฐานอ้างอิง (ไม่มีให้ใส่
+                              "-")</mat-label
+                            >
+                            <textarea matInput></textarea>
+                          </mat-form-field> </span
+                        ><input class="ra-one" type="file">
+                      </p>
+                    </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+      </mat-card-content>
+    </mat-card>
+</mat-card-content>
+<mat-card-content class="card-one-t">
+    <mat-card class="card-one-t">
+        <mat-card-header class="card-one-h">{{list7}}</mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="column">
+                    <mat-form-field appearance="outline">
+                        <mat-label>ข้อเสนอแนะอื่น ๆ เพิ่มเติม (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput autocomplete="off"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+      </mat-card-content>
+    </mat-card>
+</mat-card-content>
+<div class="btn-position">
+    <a routerLink="/mnf-spvs">
+        <button class="btn-b" mat-raised-button color="warn" mat-button >Back</button>
+    </a>
+    <button mat-raised-button color="primary" mat-button >Save</button>
+</div>

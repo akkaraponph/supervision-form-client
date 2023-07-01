@@ -1,0 +1,809 @@
+<div class="mat-elevation-z3">
+  <mat-toolbar class="one-top" color="primary">
+    <span class="toolbar-one"
+      >แบบติดตาม ตรวจสอบความพร้อมประเมินคุณภาพภายในสถานศึกษา</span
+    >
+    <mat-icon class="toolbar-two">groups</mat-icon>
+  </mat-toolbar>
+</div>
+
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+<div class="example-button-row-two">
+  <div class="example-button-row">
+    <div class="example-button-row-one">
+      <a routerLink="/mnf-tk">
+        <button mat-raised-button color="warn">
+          <mat-icon>keyboard_return</mat-icon> Blck
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+<br />
+
+<mat-card class="card-one-t">
+  <mat-card-content class="card-one-t">
+    <div align="center" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>
+      <table style="width:100%;border-collapse:collapse;border:none;">
+          <thead>
+              <tr>
+                  <td rowspan="2" style="width:3%;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:20px;font-family:   "TH SarabunPSK",sans-serif;'>ที่</span></strong></p>
+                  </td>
+                  <td rowspan="2" style="width:42%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:20px;font-family:   "TH SarabunPSK",sans-serif;'>หัวข้อ</span></strong></p>
+                  </td>
+                  <td colspan="2" style="width:15%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:20px;font-family:   "TH SarabunPSK",sans-serif;'>ผลการดำเนินการ</span></strong></p>
+                  </td>
+                  <td rowspan="2" style="width:40%;border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:20px;font-family:   "TH SarabunPSK",sans-serif;'>เอกสารอ้างอิง</span></strong></p>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="width: 49.6pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:20px;font-family:   "TH SarabunPSK",sans-serif;'>ไม่ปฏิบัติ</span></strong></p>
+                  </td>
+                  <td style="width: 49.6pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style='font-size:20px;font-family:   "TH SarabunPSK",sans-serif;'>ปฏิบัติ</span></strong></p>
+                  </td>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>1</span><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>แต่งตั้งคณะกรรมการการประเมินคุณภาพภายในจำนวนอย่างน้อย 3 คน &nbsp; &nbsp; ประกอบด้วยผู้ทรงคุณวุฒิที่ได้รับการประกาศจากหน่วยงานต้นสังกัดจำนวน &nbsp;อย่างน้อย 1 คน&nbsp;</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>2</span><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>กำหนดและประกาศค่าเป้าหมายของสถานศึกษา</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>3</span><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>กำหนดและประกาศค่าเป้าหมายแต่ละมาตรฐานของสถานศึกษา</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>4.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>แต่ละประเด็นการประเมินหรือเป้าหมายการพัฒนามีการกำหนดค่าเป้าหมาย หรือเป้าหมายความสำเร็จ</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>5.<br>&nbsp;</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>จัดทำเครื่องมือ แนวการดำเนินงานในแต่ละประเด็นพิจารณามีครบถ้วน และน่าเชื่อถือ &nbsp; ทั้ง &nbsp;3 &nbsp;มาตรฐาน</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>6</span><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีการจัดทำปฏิทินปฏิบัติงานประกันคุณภาพภายในสถานศึกษา</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>7.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีการแต่งตั้งคำสั่งผู้รับผิดชอบงานประกันคุณภาพการศึกษาที่</span></p>
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>ทุกคนมีส่วนร่วม</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>8.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีการจัดทำและดำเนินการตามแผนพัฒนาคุณภาพการศึกษา &nbsp; &nbsp; และแผนปฏิบัติการประจำปีที่ผ่านความเห็นชอบจากคณะกรรมการสถานศึกษา</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>9.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีการดำเนินงาน</span><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>/โครงการ ที่สอดคล้องกับมาตรฐานการศึกษาขั้นพื้นฐาน</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>10.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีการจัดทำรายงานประจำปีของสถานศึกษาและเผยแพร่ต่อสาธารณชน</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>11.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีทำสารสนเทศที่สามารถนำไปใช้ในการบริหารจัดการได้ มีค่าสถิตเปรียบเทียบ เช่นผลสัมฤทธิ์ของนักเรียน ผลการทดสอบระดับชาติ &nbsp;(</span><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>o-net)&nbsp;ฯ และเผยแพร่แก่สาธารณชน</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>12.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีการจัดให้มีการนิเทศติดตามการตรวจสอบคุณภาพการศึกษา &nbsp; &nbsp; ทั้งระดับบุคคลและระดับสถานศึกษาที่แสดงผลการบรรลุวัตถุประสงค์ของโครงการ โดยมีเครื่องมือที่หลากหลาย</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>13.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>มีข้อมูลและสารสนเทศผลงาน&nbsp;</span><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>BEST PRACTICE ของครู&nbsp;</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+              <tr>
+                  <td style="width: 1cm;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>14.</span></p>
+                  </td>
+                  <td style="width: 247.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:20px;font-family:"TH SarabunPSK",sans-serif;'>ครูและบุคลากรทางการศึกษาได้รับการส่งเสริมเรื่องระบบการประเมินคุณภาพการศึกษาแนวใหม่ตามกฎกระทรวง การประกันคุณภาพการศึกษา 2565</span></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="1"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td style="width: 33.9pt;border-top: none;border-left: none;border-bottom: solid black 1pt;border-right: solid black 1pt;padding: 0cm 5.4pt 0cm 5.4pt;height: 83pt;">
+                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif; text-align:center;'><strong><span style='font-size:21px;font-family:"TH SarabunPSK",sans-serif;'><mat-radio-button value="0"></mat-radio-button></span></strong></p>
+                  </td>
+                  <td
+                      style="
+                        width: 134.95pt;
+                        border-top: none;
+                        border-left: none;
+                        border-bottom: 1pt solid black;
+                        border-right: 1pt solid black;
+                        padding: 0cm 5.4pt;
+                        height: 83pt;
+                        vertical-align: top;
+                      "
+                    >
+                  <p
+                    style="
+                      margin-top: 0cm;
+                      margin-right: 0cm;
+                      margin-bottom: 0cm;
+                      margin-left: 0cm;
+                      line-height: normal;
+                      font-size: 15px;
+                      font-family: 'Calibri', sans-serif;
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 20px;
+                        font-family: 'TH SarabunPSK', sans-serif;
+                      "
+                      ><mat-form-field
+                        appearance="outline"
+                        style="margin-top: 20px"
+                      >
+                        <mat-label
+                          >คำอธิบาย/เอกสารอ้างอิง (ไม่มีให้ใส่ "-")</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field> </span
+                    ><input class="ra-one" type="file">
+                  </p>
+              </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  </mat-card-content>
+</mat-card>
+<div class="btn-position">
+  <a routerLink="/mnf-tk">
+    <button class="btn-b" mat-raised-button color="warn" mat-button>
+      Cancel
+    </button>
+  </a>
+  <button mat-raised-button color="primary" mat-button>Save</button>
+</div>
