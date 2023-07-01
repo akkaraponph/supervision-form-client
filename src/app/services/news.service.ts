@@ -10,32 +10,32 @@ import { News } from '../interfaces/news';
 export class NewsService {
 
   private API_ENDPOINT: string;
-  private myApiUrl: string;
+  private SERVICE_ENDPOINT: string;
 
   constructor(private http: HttpClient) { 
 
     this.API_ENDPOINT = environment.endpoint;
-    this.myApiUrl = 'api/news/';
+    this.SERVICE_ENDPOINT = 'api/news/';
 
   }
 
   GetListNews(): Observable<any> {
-    return this.http.get<any>(`${this.API_ENDPOINT}${this.myApiUrl}`);
+    return this.http.get<any>(`${this.API_ENDPOINT}${this.SERVICE_ENDPOINT}`);
   }
 
   AddNews(news: News): Observable<void> {
-    return this.http.post<void>(`${this.API_ENDPOINT}${this.myApiUrl}/add-news`, news);
+    return this.http.post<void>(`${this.API_ENDPOINT}${this.SERVICE_ENDPOINT}/add-news`, news);
   }
 
   DeleteNews(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.API_ENDPOINT}${this.myApiUrl}${id}`);
+    return this.http.delete<void>(`${this.API_ENDPOINT}${this.SERVICE_ENDPOINT}${id}`);
   }
 
   GetNews(id: number): Observable<any> {
-    return this.http.get<any>(`${this.API_ENDPOINT}${this.myApiUrl}${id}`)
+    return this.http.get<any>(`${this.API_ENDPOINT}${this.SERVICE_ENDPOINT}${id}`)
   }
 
   UpdateNews(id: number, news: News): Observable<void> {
-    return this.http.put<void>(`${this.API_ENDPOINT}${this.myApiUrl}${id}`, news);
+    return this.http.put<void>(`${this.API_ENDPOINT}${this.SERVICE_ENDPOINT}${id}`, news);
   }
 }
