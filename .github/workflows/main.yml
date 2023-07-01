@@ -27,6 +27,4 @@ jobs:
             cd /var/www/supervision_form_client/
             git pull
             git status
-            sudo su
-            yarn
-            yarn build
+
