@@ -21,6 +21,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           port: 22
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo su
             cd /var/www/supervision_form_client/
