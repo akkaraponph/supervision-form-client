@@ -25,6 +25,6 @@ jobs:
           script: |
             sudo su
             cd /var/www/supervision_form_client/
-            git pull origin main
+            git pull
             git status
-            yarn
+            yarn build
