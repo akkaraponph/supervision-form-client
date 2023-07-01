@@ -27,4 +27,4 @@ jobs:
             cd /var/www/supervision_form_client/
             git pull origin main
             git status
-            npm install --only=prod
+            yarn
