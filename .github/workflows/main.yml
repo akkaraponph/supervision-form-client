@@ -22,6 +22,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: 22
           script: |
+            sudo su
             cd /var/www/supervision_form_client/
             git pull origin main
             git status
