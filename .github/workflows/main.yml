@@ -23,7 +23,6 @@ jobs:
           port: 22
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            sudo su
             cd /var/www/supervision_form_client/
             git pull
             git status
